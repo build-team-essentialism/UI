@@ -163,12 +163,30 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-.nav {
-  border: 2px solid black;
+header .nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  margin: 10px 0px;
 }
-.nav h2 {
+header .nav .title h2 {
   font-size: 3rem;
+  color: #c01515;
 }
-.nav .navigation a {
+header .nav .navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 40%;
+}
+header .nav .navigation a {
   text-decoration: none;
+  text-emphasis: bold;
+  color: black;
+  font-size: 1.5rem;
+  text-shadow: 0.02px 0.02px black;
+}
+header .nav .navigation a:hover {
+  color: #c01515;
 }

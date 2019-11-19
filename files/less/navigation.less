@@ -1,13 +1,29 @@
-.nav {
-    border: 2px solid black;
+header {
+    .nav {
+        .centerFlex();
+        margin: 10px 0px;
 
-    h2 {
-        font-size: 3rem;
-    }
+        .title {
+            h2 {
+                font-size: 3rem;
+                color: @MainColor;
+            }
+        }
 
-    .navigation {
-        a {
-            text-decoration: none;
+        .navigation {
+            .navFlex();
+
+            a {
+                text-decoration: none;
+                text-emphasis: bold;
+                color: black;
+                font-size: 1.5rem;
+                text-shadow: .02px .02px black;
+            }
+
+            a:hover {
+                color: @MainColor;
+            }
         }
     }
 }

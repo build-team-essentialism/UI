@@ -1,0 +1,88 @@
+.counter {
+    padding-top: 50px;
+    .centerFlex();
+    margin: 0 auto;
+    flex-direction: column;
+
+    .here {
+        h1 {
+            font-size: 5rem;
+            max-width: 100%;
+        }
+
+        p {
+            .centerFlex();
+            padding: 20px;
+            font-size: 2.5rem;
+            color: @MainColor;
+        }
+    }
+
+    .served {
+        display: flex;
+        justify-content: space-around;
+        width: 90%;
+        max-width: 100%;
+
+        .box {
+            p {
+                padding: 3px 0;
+                font-size: 1.3rem;
+                font-weight: 500;
+            }
+
+            .number {
+                .centerFlex();
+                font-size: 3rem;
+            }
+        }
+    }
+}
+
+.team {
+    .centerFlex();
+    max-width: 100%;
+    margin-top: 40px;
+
+    .profile {
+        border: 3px solid black;
+        width: 90%;
+
+        .team-member {
+            border: 1px solid black;
+            display: flex;
+            height: 220px;
+        }
+
+        .member-photo {
+            width: 25%;
+            height: 220px;
+            max-height: 220px;
+            border: 1px solid black;
+        }
+
+        .member-info {
+            width: 75%;
+            font-size: 1.5rem;
+            line-height: 1.7;
+            padding-left: 10px;
+            padding-top: 5px;
+
+            a {
+                color: @MainColor;
+                text-decoration: none;
+                font-style: italic;
+            }
+
+            .role {
+                color: @MainColor;
+            }
+        }
+    }
+}
+
+
+
+// #vin {
+//     height: 220px;
+// }

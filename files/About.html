@@ -19,15 +19,15 @@
 
     <!-- ** Header for Navigation-->
     <header>
-        <nav>
+        <nav id="nav-top" class="nav">
             <div class="title">
                 <h2>Essentialism</h2>
             </div>
             <div class="navigation">
                 <a href="index.html">Home</a>
-                <a href="#">Blog</a>
                 <a href="#">About Us</a>
-                <a href="#">Log In</a>
+                <a href="#">Register</a>
+                <a href="#">Login</a>
             </div>
         </nav>
     </header>
@@ -35,19 +35,20 @@
     <aside class="counter">
         <div class="here">
             <h1>Essentialism Lives Here</h1>
+            <p>Our Community By The Numbers</p>
         </div>
         <div class="served">
-            <div class="users">
-                <p>1.2</p>
+            <div class="box">
+                <p class="number">1.2</p>
                 <p>Million Users</p>
             </div>
-            <div class="projects">
-                <p>2.7</p>
+            <div class="box">
+                <p class="number">5.7</p>
                 <p>Million Projects Completed</p>
             </div>
-            <div class="employees">
-                <p>6</p>
-                <p>Employees</p>
+            <div class="box">
+                <p class="number">6</p>
+                <p>Essential Employees</p>
             </div>
         </div>
     </aside>
@@ -56,74 +57,74 @@
         <div class="profile">
             <div class="team-member">
                 <div class="member-photo">
-                    <img src="" alt="picture of matthew bedard, Essentialism's UI Developer">
+                    <img src="images/Matthew.jpg" alt="picture of matthew bedard, Essentialism's UI Developer">
                 </div>
                 <div class="member-info">
                     <p>Matthew Bedard</p>
-                    <p>User Interface Developer</p>
+                    <p class="role">User Interface Developer</p>
                     <p>Hometown: Philadelphia, PA</p>
                     <p>Experience: <a href="https://github.com/Matt-GitHub">Github</a></p>
-                    <p>Favorite Essentialism Quote: Stop making casual commitments</p>
+                    <p>"Stop making casual commitments"</p>
                 </div>
             </div>
             <div class="team-member">
                 <div class="member-photo">
-                    <img src="" alt="picture of matthew bedard, Essentialism's UI Developer">
+                    <img src="images/Taylor.png" alt="picture of matthew bedard, Essentialism's UI Developer">
                 </div>
                 <div class="member-info">
                     <p>Taylor Lohman</p>
-                    <p>React I</p>
+                    <p class="role">React I</p>
                     <p>Hometown: Los Angeles, CA</p>
                     <p>Experience: <a href="https://github.com/tclohm">Github</a></p>
-                    <p>Favorite Essentialism Quote: Stop making casual commitments</p>
+                    <p>“If it isn’t a clear yes, then it’s a clear no”</p>
                 </div>
             </div>
             <div class="team-member">
                 <div class="member-photo">
-                    <img src="" alt="picture of matthew bedard, Essentialism's UI Developer">
+                    <img src="images/Eric.png" alt="picture of matthew bedard, Essentialism's UI Developer">
                 </div>
                 <div class="member-info">
                     <p>Eric Nunn</p>
-                    <p>React I</p>
-                    <p>Hometown: Philadelphia</p>
+                    <p class="role">React I</p>
+                    <p>Hometown: Detroid, MI</p>
                     <p>Experience: <a href="https://github.com/ericNunnDev">Github</a></p>
-                    <p>Favorite Essentialism Quote: Stop making casual commitments</p>
+                    <p>“Done is better than perfect”</p>
                 </div>
             </div>
-            <div class="team-member">
+            <div id="vin" class="team-member">
                 <div class="member-photo">
-                    <img src="" alt="picture of matthew bedard, Essentialism's UI Developer">
+                    <img src="images/Vincent.png" alt="picture of matthew bedard, Essentialism's UI Developer">
                 </div>
                 <div class="member-info">
                     <p>Vincent Pagano</p>
-                    <p>React II</p>
+                    <p class="role">React II</p>
                     <p>Hometown: Philadelphia</p>
                     <p>Experience: <a href="https://github.com/vpagano10">Github</a></p>
-                    <p>Favorite Essentialism Quote: Stop making casual commitments</p>
+                    <p>"Do something that will inch you closer to a better tomorrow"</p>
                 </div>
             </div>
             <div class="team-member">
                 <div class="member-photo">
-                    <img src="" alt="picture of matthew bedard, Essentialism's UI Developer">
+                    <img src="images/Vanessa.jpg" alt="picture of matthew bedard, Essentialism's UI Developer">
                 </div>
                 <div class="member-info">
                     <p>Vanesa Hernandez Flores</p>
-                    <p>Backend Developer</p>
+                    <p class="role">Backend Developer</p>
                     <p>Hometown: College Station, Tx</p>
                     <p>Experience: <a href="https://github.com/vanesa-fleurs">Github</a></p>
-                    <p>Favorite Essentialism Quote: Stop making casual commitments</p>
+                    <p>“What you don’t do is just as important as what you do”</p>
                 </div>
             </div>
             <div class="team-member">
                 <div class="member-photo">
-                    <img src="" alt="picture of matthew bedard, Essentialism's UI Developer">
+                    <img src="images/Josh.png" alt="picture of matthew bedard, Essentialism's UI Developer">
                 </div>
                 <div class="member-info">
                     <p>Josh Disney</p>
-                    <p>Team Lead</p>
+                    <p class="role">Team Lead</p>
                     <p>Hometown: Philadelphia</p>
                     <p>Experience: <a href="https://github.com/Joshua-Disney">Github</a></p>
-                    <p>Favorite Essentialism Quote: Stop making casual commitments</p>
+                    <p>“If I didn’t already own this, how much would I spend to buy it?”</p>
                 </div>
             </div>
         </div>
@@ -132,51 +133,50 @@
 
     <footer>
         <!-- !back to Top-->
-        <div class="to-top">
-            <p>Back to top</p>
+        <div class="top">
+            <a href="#nav-top">Back to Top</a>
         </div>
+
 
         <!-- ! navbar / and (Legal / Careers / Profile / Whats New)-->
         <div class="footer-nav">
             <div class="us">
                 <h4>Get to Know us</h4>
                 <ul>
-                    <li>Careers</li>
-                    <li>Blog</li>
-                    <li>About Essentalism</li>
-                    <li>Investor Relations</li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">About Essentalism</a></li>
+                    <li><a href="#">Investor Relations</a></li>
                 </ul>
             </div>
             <div class="help">
                 <h4>Let us Help You</h4>
                 <ul>
-                    <li>Your Account</li>
-                    <li>Your Subscription</li>
-                    <li>Refund Policy</li>
-                    <li>Manage Your Devices</li>
-                    <li>Help</li>
+                    <li><a href="#">Your Account</a></li>
+                    <li><a href="#">Your Subscription</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                    <li><a href="#">Help</a></li>
                 </ul>
             </div>
             <div class="affiliate">
                 <h4>Make Money with Us</h4>
                 <ul>
-                    <li>Affiliate FAQ</li>
-                    <li>Become an Affiliate</li>
-                    <li>Affiliate Services</li>
-                    <li>Affiliate Log In</li>
+                    <li><a href="#">Affiliate FAQ</a></li>
+                    <li><a href="#">Become an Affiliate</a></li>
+                    <li><a href="#">Affiliate Services</a></li>
+                    <li><a href="#">Affiliate Login</a></li>
                 </ul>
             </div>
             <div class="business">
                 <h4>For Business</h4>
                 <ul>
-                    <li>Team Packages</li>
-                    <li>Consulting</li>
-                    <li>Events</li>
+                    <li><a href="#">Team Packages</a></li>
+                    <li><a href="#">Consulting</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Benefits</a></li>
                 </ul>
             </div>
         </div>
-
-        <!-- !footer navigation that includeds Contact / privacy and cookies / terms of use / about our ads/ copyright-->
     </footer>
 
 </body>

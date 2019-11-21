@@ -1,3 +1,9 @@
+body {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
 .counter {
     padding-top: 50px;
     .centerFlex();
@@ -60,25 +66,36 @@
     .profile {
         // border: 3px solid black;
         width: 90%;
+        margin: 0 auto;
+
+        @media @mobile {
+            text-align: center;
+        }
 
         .team-member {
             // border: 1px solid black;
             display: flex;
             height: 220px;
             border-bottom: .5px dashed black;
-            margin-bottom: 20px;
+            margin: 50px;
 
             @media @mobile {
                 margin-bottom: none;
                 height: 150px;
+                margin: 20px;
             }
         }
 
         .member-photo {
             width: 25%;
-            height: 100px;
-            max-height: 100px;
-            // border: 1px solid black;
+            height: 220px;
+            max-height: 220px;
+
+            img {
+                border-radius: 100%;
+            }
+
+            // border: 3px solid black;
         }
 
         .member-info {
@@ -87,6 +104,8 @@
             line-height: 1.7;
             padding-left: 10px;
             padding-top: 5px;
+            .centerFlex();
+            flex-direction: column;
 
             @media @mobile {
                 font-size: 1.1rem;
@@ -104,6 +123,8 @@
             }
 
             .es-quote {
+                display: none;
+
                 @media @mobile {
                     display: none;
                 }

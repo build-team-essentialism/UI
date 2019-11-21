@@ -224,6 +224,16 @@ header .nav .navigation a:hover {
     flex-direction: column;
   }
 }
+@media (max-width: 1000px) {
+  .main .moto {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+}
 .main .moto h1 {
   font-size: 5rem;
 }
@@ -256,12 +266,23 @@ header .nav .navigation a:hover {
     display: none;
   }
 }
+@media (max-width: 1000px) {
+  .main img {
+    display: none;
+  }
+}
 .quote {
   margin: 50px;
 }
 @media (max-width: 500px) {
   .quote {
     display: none;
+  }
+}
+@media (max-width: 1000px) {
+  .quote {
+    text-align: center;
+    line-height: 1.5;
   }
 }
 .quote p {
@@ -335,6 +356,11 @@ header .nav .navigation a:hover {
     display: none;
   }
 }
+@media (max-width: 1000px) {
+  .question .product-description {
+    font-size: 1.3rem;
+  }
+}
 .action {
   display: flex;
   justify-content: space-around;
@@ -352,6 +378,16 @@ header .nav .navigation a:hover {
     font-size: 1.5rem;
     text-align: center;
     margin: 0 auto;
+  }
+}
+@media (max-width: 1000px) {
+  .action {
+    max-width: 100%;
+    width: 90%;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 1.2;
   }
 }
 .action a {
@@ -419,6 +455,11 @@ header .nav .navigation a:hover {
 .footer-nav ul a:hover {
   color: #c01515;
 }
+body {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
 .counter {
   padding-top: 50px;
   display: flex;
@@ -485,23 +526,33 @@ header .nav .navigation a:hover {
 }
 .team .profile {
   width: 90%;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .team .profile {
+    text-align: center;
+  }
 }
 .team .profile .team-member {
   display: flex;
   height: 220px;
   border-bottom: 0.5px dashed black;
-  margin-bottom: 20px;
+  margin: 50px;
 }
 @media (max-width: 500px) {
   .team .profile .team-member {
     margin-bottom: none;
     height: 150px;
+    margin: 20px;
   }
 }
 .team .profile .member-photo {
   width: 25%;
-  height: 100px;
-  max-height: 100px;
+  height: 220px;
+  max-height: 220px;
+}
+.team .profile .member-photo img {
+  border-radius: 100%;
 }
 .team .profile .member-info {
   width: 75%;
@@ -509,6 +560,11 @@ header .nav .navigation a:hover {
   line-height: 1.7;
   padding-left: 10px;
   padding-top: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
 }
 @media (max-width: 500px) {
   .team .profile .member-info {
@@ -523,6 +579,9 @@ header .nav .navigation a:hover {
 }
 .team .profile .member-info .role {
   color: #c01515;
+}
+.team .profile .member-info .es-quote {
+  display: none;
 }
 @media (max-width: 500px) {
   .team .profile .member-info .es-quote {

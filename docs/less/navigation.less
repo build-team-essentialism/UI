@@ -1,0 +1,41 @@
+header {
+    .nav {
+        .centerFlex();
+        margin: 10px 0px;
+
+        .title {
+            h2 {
+                font-size: 3rem;
+                color: @MainColor;
+
+                @media @mobile {
+                    display: none;
+                }
+            }
+        }
+
+        .navigation {
+            .navFlex();
+
+            @media @mobile {
+                .centerFlex();
+                width: 100%;
+                max-width: 100%;
+                padding-top: 10px;
+            }
+
+            a {
+                text-decoration: none;
+                text-emphasis: bold;
+                color: black;
+                font-size: 1.5rem;
+                text-shadow: .02px .02px black;
+
+            }
+
+            a:hover {
+                color: @MainColor;
+            }
+        }
+    }
+}
